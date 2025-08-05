@@ -1,5 +1,5 @@
 /* Import Font Awesome for icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
 /* Import Modern Geometric Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
@@ -468,11 +468,29 @@ body {
 
 /* Skills */
 .skills-section h3 {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.skill-category p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-light);
 }
 
 .skill-item {
@@ -743,7 +761,7 @@ body {
   border: 2px solid transparent;
   border-radius: 10px;
   font-size: 0.95rem;
-  font-family: var(--font-primary);
+  font-family: var(--font-heading);
   font-weight: 400;
   letter-spacing: -0.01em;
   transition: var(--transition);
@@ -798,7 +816,7 @@ body {
   border-radius: 30px;
   font-size: 1rem;
   font-weight: 600;
-  font-family: var(--font-primary);
+  font-family: var(--font-heading);
   letter-spacing: -0.01em;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -821,6 +839,7 @@ body {
 }
 
 .contact-link {
+  font-family: var(--font-heading);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -849,37 +868,36 @@ body {
 /* Footer */
 .footer {
   padding: 3rem 0;
-  background: var(--dark-bg);
-  color: var(--text-light);
+  background: #0a0a0a;
+  color: #eee;
   text-align: center;
-}
-
-.dark .footer {
-  background: black;
+  font-family: var(--font-heading);
 }
 
 .footer p {
   margin-bottom: 1rem;
+  font-size: 1rem;
   opacity: 0.8;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
 }
 
 .footer-links a {
-  color: var(--text-light);
-  font-size: 1.25rem;
-  transition: var(--transition);
-  opacity: 0.7;
+  color: #aaa;
+  transition: 0.3s ease;
+  opacity: 0.75;
 }
 
 .footer-links a:hover {
-  opacity: 1;
   color: var(--primary-color);
-  transform: translateY(-3px);
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 /* Magnetic Buttons */

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import AOS from 'aos';
 import Particles from 'react-tsparticles';
-import TechIcon from './TechIcon'
+// import TechIcon from './TechIcon'
 import 'aos/dist/aos.css';
 import './App.css';
 
@@ -190,32 +190,32 @@ function App() {
       /* icon: ''*/
     },
     {
-      title: 'Front-End Developer Intern',
-      company: 'Digital Solutions Co.',
-      period: 'Jan 2024 – May 2024',
+      title: 'App Development Intern & Lead',
+      company: 'Oracode',
+      period: 'July 2025 – Present',
       location: 'Remote',
       bullets: [
-        'Built responsive SPAs with modern JS frameworks.',
-        'Implemented pixel-perfect UIs from Figma mockups.',
-        'Enhanced accessibility & SEO compliance.',
-        'Created a reusable component library (↓40% dev time).'
+        'Led Flutter dev for an offline-first educational app with full routing, state, and theming',
+        'Built game and sandbox modes using custom Blockly-based simulation logic',
+        'Developed on-device NLP for multilingual interactions and AI feedback',
+        'Designed real-time features with local storage to support interactive learning'
       ],
-      tech: ['Vue.js', 'Tailwind', 'TypeScript', 'Figma'],
+      tech: ['Flutter', 'Blockly/Visual Programming', 'On-device NLP', 'State Management'],
       /* icon: ''*/
     },
     {
-      title: 'Web Development Intern',
-      company: 'StartupXYZ',
-      period: 'Jun 2023 – Aug 2023',
-      location: 'New York, NY',
+      title: 'Marketing and Membership Coordinator',
+      company: 'Fitness Project',
+      period: 'May 2025 – August 2025',
+      location: 'The Woodlands, TX',
       bullets: [
-        'Assisted in building an e-commerce platform.',
-        'Integrated payment & shipping APIs.',
-        'Wrote unit tests & docs for new features.',
-        'Used Git/GitHub for version control.'
+        'Managed CRM operations using ABC Fitness and GymSales to track memberships, automate outreach, and optimize client pipelines',
+        'Operated Ignite Sales platform for lead generation and performance tracking across marketing campaigns',
+        'Used data dashboards and reporting tools to monitor KPIs and improve member engagement',
+        'UStreamlined communication workflows between departments through platform integrations and digital tools'
       ],
-      tech: ['JavaScript', 'Python', 'Django', 'PostgreSQL'],
-      /* icon: ''*/
+      tech: ['CRM Management', 'Marketing Automation', 'Data Reporting', 'Lead Pipeline Optimization'],
+      icon: ''
     }
   ];
 
@@ -224,44 +224,46 @@ function App() {
       title: "Fluffi",
       description: "An AI assistant that simulates memory decay using behavioral embeddings and on-device NLP to proactively resurface relevant past experiences.",
       tech: ["Flutter", "Dart", "Hive", "On-device NLP", "Semantic Search", "Behavioral Embeddings"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+      image: "/fluffi.png",
       demo: "#",
       github: "https://github.com/tinexu/cm-aug-system"
     },
     {
-      title: "AI Task Manager",
-      description: "Smart task management application with AI-powered prioritization and natural language processing.",
-      tech: ["Next.js", "Python", "TensorFlow", "PostgreSQL"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+      title: "AURA",
+      description: "A ML-powered dashboard integrating FRED and FX APIs to analyze macro trends, credit risks, and user alerts across 50K+ daily data points, alongside an autonomous, modular AI system for explainable credit and compliance decisions, reducing manual review time by 60%.",
+      tech: ["Machine Learning", "API Integration", "Explainable AI", "Agentic AI", "Credit Risk Modeling"],
+      image: "/AURA.png",
       demo: "#",
-      github: "#"
+      github: "https://github.com/tinexu/aura"
     },
     {
-      title: "Real-time Analytics Dashboard",
-      description: "Interactive data visualization platform for monitoring business metrics with live updates.",
-      tech: ["Vue.js", "D3.js", "WebSocket", "Redis"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      title: "CAD-Driven XR Simulation Engine for NASA Missions",
+      description: "Built a real-time XR astronaut training simulation in Unreal Engine for NASA, optimizing CAD assets and scripting procedures in Blueprints with <5% frame drop. Published in IEEE SMC-ITSCC 2025 for work on Gateway and lunar mission visualization tools. (Source code and materials protected under NDA).",
+      tech: ["Unreal Engine/Blueprints", "XR Simulation Development", "3D Asset Optimization", "Performance Tuning", "Scientific Visualization"],
+      image: "/GVT-Image.png",
       demo: "#",
-      github: "#"
+      github: "#",
+      private: true
     },
-    {
+    /*{
       title: "Social Media App",
       description: "Full-featured social platform with real-time messaging, stories, and content sharing.",
       tech: ["React Native", "Firebase", "Node.js", "Socket.io"],
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
       demo: "#",
       github: "#"
-    }
+    }*/
   ];
 
   const skills = [
-    { name: "React/Next.js", level: 90, color: "#61DAFB" },
-    { name: "Node.js", level: 85, color: "#339933" },
-    { name: "TypeScript", level: 80, color: "#3178C6" },
-    { name: "Python", level: 75, color: "#3776AB" },
-    { name: "UI/UX Design", level: 85, color: "#FF6B6B" },
-    { name: "Database Design", level: 80, color: "#4479A1" }
-  ];
+    { name: "Python", level: 90, color: "#537efcff" },
+    { name: "React", level: 85, color: "#66bfff" },
+    { name: "Flutter", level: 80, color: "#8457f7ff" },
+    { name: "TensorFlow Lite", level: 75, color: "#ff51c5ff" },
+    { name: "Multi-Agent Systems", level: 85, color: "#ff88c2" },
+    { name: "On-device ML", level: 80, color: "#bf9bf8ff" }
+  ]
+
 
   return (
     <div className={darkMode ? 'app dark' : 'app'}>
@@ -334,7 +336,7 @@ function App() {
       />
 
       {/* Theme Toggle */}
-      <button
+      {/* <button
         className="theme-toggle"
         onClick={() => setDarkMode(!darkMode)}
         aria-label="Toggle Dark Mode"
@@ -346,7 +348,7 @@ function App() {
         >
           {darkMode ? '🌙' : '☀️'}
         </motion.div>
-      </button>
+      </button>*/}
 
       {/* Navigation */}
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
@@ -480,25 +482,31 @@ function App() {
               transition={{ duration: 0.6 }}
             >
               <p>
-                I'm a passionate full-stack developer with a keen eye for design and a love for creating
-                exceptional digital experiences. With expertise in modern web technologies, I bring ideas
-                to life through clean, efficient code and intuitive user interfaces.
+                I’m a full-stack developer and AI enthusiast with a strong foundation in software engineering, on-device intelligence, and 
+                intuitive UX. During my internships at CuesHub and Oracode, I’ve built cross-platform apps, led scalable Flutter development 
+                for large teams, and developed multilingual NLP systems that deliver smart, real-time feedback.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source
-                projects, or crafting the perfect cup of coffee. I believe in continuous learning and
-                staying up-to-date with the latest industry trends.
+                I’ve created Fluffi, an AI-powered memory assistant that predicts future memory needs using behavioral embeddings. I also 
+                built AURA, an autonomous financial dashboard with explainable agents for credit and compliance decisions, and Elevatr, a 
+                career pivot platform that recommends personalized project paths based on a user’s goals and evolving job market trends. I 
+                co-authored an IEEE-published XR training system for NASA, where I worked on real-time astronaut simulation in Unreal Engine.
+              </p>
+              <p>
+                Beyond building software, I love writing stories. I’m drawn to ideas that blend creativity and technology, and I enjoy 
+                crafting experiences that are not only functional but also emotionally resonant. Whether I’m exploring new tools, contributing 
+                to open-source, or refining an interface, I focus on making digital experiences intelligent, transparent, and meaningful.
               </p>
 
               <div className="about-tags">
                 <span className="tag">
-                  <i className="fas fa-code"></i> Clean Code
+                  <i className="fas fa-code"></i> Intelligent Systems
                 </span>
                 <span className="tag">
-                  <i className="fas fa-palette"></i> UI/UX Design
+                  <i className="fas fa-palette"></i> Purposeful Design
                 </span>
                 <span className="tag">
-                  <i className="fas fa-rocket"></i> Performance
+                  <i className="fas fa-rocket"></i> Systems Thinking
                 </span>
               </div>
             </motion.div>
@@ -619,26 +627,27 @@ function App() {
               >
                 <div className="project-image">
                   <img src={project.image} alt={project.title} />
-                  <div className="project-overlay">
-                    <motion.a
-                      href={project.demo}
-                      className="project-link liquid-button"
-                      whileHover={{ scale: 1.2, rotate: 90 }}
-                      whileTap={{ scale: 0.9 }}
-                      aria-label="View Demo"
-                    >
-                      <i className="fas fa-external-link-alt"></i>
-                    </motion.a>
-                    <motion.a
-                      href={project.github}
-                      className="project-link liquid-button"
-                      whileHover={{ scale: 1.2, rotate: -90 }}
-                      whileTap={{ scale: 0.9 }}
-                      aria-label="View Code"
-                    >
-                      <i className="fab fa-github"></i>
-                    </motion.a>
-                  </div>
+                  {!project.private && (
+                    <div className="project-overlay">
+                      <motion.a
+                        href={project.demo}
+                        className="project-link liquid-button"
+                        whileHover={{ scale: 1.2, rotate: 90 }}
+                        whileTap={{ scale: 0.9 }}
+                        aria-label="View Demo"
+                      >
+                        <i className="fas fa-external-link-alt"></i>
+                      </motion.a>
+                      <motion.a
+                        href={project.github}
+                        className="project-link liquid-button"
+                        whileHover={{ scale: 1.2, rotate: -90 }}
+                        whileTap={{ scale: 0.9 }}
+                        aria-label="View Code"
+                      >
+                        <i className="fab fa-github"></i>
+                      </motion.a>
+                    </div>)}
                 </div>
                 <div className="project-content">
                   <h3 className="text-reveal">{project.title}</h3>
@@ -749,16 +758,23 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="footer" data-aos="fade-up">
+      <footer className="footer">
         <div className="container">
-          <p>© 2025 John Doe. Built with React & ❤️</p>
+          <p>© 2025 Christine Xu</p>
           <div className="footer-links">
-            <a href="#"><i className="fab fa-github"></i></a>
-            <a href="#"><i className="fab fa-linkedin"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
+            <a href="/Christine_Xu_Resume_AppleAI.pdf" target="_blank" rel="noopener noreferrer" aria-label="Featured">
+              <i className="fas fa-star"></i>
+            </a>
+            <a href="https://github.com/tinexu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christinexu1211/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i className="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
