@@ -28,7 +28,7 @@ function App() {
     const initTyped = setTimeout(() => {
       if (typedRef.current) {
         typed = new Typed(typedRef.current, {
-          strings: ['Full Stack Developer.', 'UI/UX Designer.', 'Problem Solver.', 'Creative Thinker.'],
+          strings: ['Full Stack Developer.', 'AI Developer.', 'Software Engineer.', 'Innovative Thinker.', 'Machine Learning Engineer.'],
           typeSpeed: 80,
           backSpeed: 40,
           loop: true,
