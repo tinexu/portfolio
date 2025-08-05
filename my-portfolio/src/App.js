@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import AOS from 'aos';
 import Particles from 'react-tsparticles';
-// import TechIcon from './TechIcon'
 import 'aos/dist/aos.css';
 import './App.css';
 
@@ -123,7 +122,6 @@ function App() {
       });
     });
 
-    // Magnetic button effect
     const applyMagneticEffect = () => {
       const magneticButtons = document.querySelectorAll('.magnetic-button');
 
@@ -133,7 +131,6 @@ function App() {
           const x = e.clientX - rect.left - rect.width / 2;
           const y = e.clientY - rect.top - rect.height / 2;
 
-          // Limit the movement
           const moveX = x * 0.3;
           const moveY = y * 0.3;
 
@@ -147,7 +144,6 @@ function App() {
         button.addEventListener('mousemove', handleMouseMove);
         button.addEventListener('mouseleave', handleMouseLeave);
 
-        // Cleanup
         return () => {
           button.removeEventListener('mousemove', handleMouseMove);
           button.removeEventListener('mouseleave', handleMouseLeave);
@@ -187,7 +183,6 @@ function App() {
         'Built a habit forecasting engine using time series patterns to recommend high-impact nudges'
       ],
       tech: ['Flutter', 'On-device Machine Learning', 'Time Series Analysis', 'Behavioral Modeling'],
-      /* icon: ''*/
     },
     {
       title: 'App Development Intern & Lead',
@@ -201,7 +196,6 @@ function App() {
         'Designed real-time features with local storage to support interactive learning'
       ],
       tech: ['Flutter', 'Blockly/Visual Programming', 'On-device NLP', 'State Management'],
-      /* icon: ''*/
     },
     {
       title: 'Marketing and Membership Coordinator',
@@ -245,14 +239,6 @@ function App() {
       github: "#",
       private: true
     },
-    /*{
-      title: "Social Media App",
-      description: "Full-featured social platform with real-time messaging, stories, and content sharing.",
-      tech: ["React Native", "Firebase", "Node.js", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
-      demo: "#",
-      github: "#"
-    }*/
   ];
 
   const skills = [
@@ -335,21 +321,6 @@ function App() {
         }}
       />
 
-      {/* Theme Toggle */}
-      {/* <button
-        className="theme-toggle"
-        onClick={() => setDarkMode(!darkMode)}
-        aria-label="Toggle Dark Mode"
-      >
-        <motion.div
-          initial={{ rotate: 0 }}
-          animate={{ rotate: darkMode ? 0 : 180 }}
-          transition={{ duration: 0.5 }}
-        >
-          {darkMode ? '🌙' : '☀️'}
-        </motion.div>
-      </button>*/}
-
       {/* Navigation */}
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
@@ -391,16 +362,6 @@ function App() {
       >
         <div className="hero-content">
           <div className="hero-inner">
-            {/* 3D icon 
-            <motion.div
-              className="hero-icon floating"
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: 'spring', stiffness: 260, damping: 20 }}
-            >
-              <TechIcon />
-            </motion.div>*/}
-
             {/* Text block */}
             <div className="hero-text">
               <motion.h1
@@ -426,12 +387,10 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
               >
-                {/* social icons… */}
               </motion.div>
             </div>
           </div>
 
-          {/* Sprinkle of 3D Icons */}
           <div className="floating-icons">
             <img src="/3d/computer3d.png" className="floating-icon computer" alt="Computer" />
             <img src="/3d/duck3d.png" className="floating-icon duck" alt="Duck" />
