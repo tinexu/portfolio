@@ -253,7 +253,7 @@ function App() {
       private: true
     },
     {
-      title: "CAD-Driven XR Simulation Engine for NASA Missions",
+      title: "Elevatr",
       description: "Engineered a full-stack platform using HTML/CSS and Javascript to recommend personalized project paths for career transitioners. Integrated AI skill-role matching and market trend analysis to generate tailored suggestions. Processed 10,000+ job postings to align users with in-demand skills and reduced manual planning time by 70%. Deployed via Vercel with scalable routing and modular logic.",
       tech: ["Javascript", "AI/ML", "Full-Stack Development", "Prompt Engineering", "Vercel"],
       image: "/Elevatr.png",
