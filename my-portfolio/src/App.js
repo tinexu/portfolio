@@ -198,6 +198,19 @@ function App() {
       tech: ['Flutter', 'Blockly/Visual Programming', 'On-device NLP', 'State Management'],
     },
     {
+      title: 'STEM Tutor',
+      company: 'Amergis',
+      period: 'August 2025 – Present',
+      location: 'Remote',
+      bullets: [
+        'Tutored high school students in math and science through the Paper platform, focusing on analytical reasoning and problem-solving strategies',
+        'Strengthened students’ quantitative and scientific thinking by guiding them through structured problem breakdowns',
+        'Tracked student progress through Paper’s performance dashboard to refine support and maximize impact',
+        'Developed personalized learning plans using diagnostic assessments and performance metrics'
+      ],
+      tech: ['AI Tutoring Insights', 'EdTech Tools', 'UX-Focused Problem Solving', 'STEM Communication'],
+    },
+    {
       title: 'Marketing and Membership Coordinator',
       company: 'Fitness Project',
       period: 'May 2025 – August 2025',
