@@ -141,9 +141,14 @@ body {
 }
 
 .logo {
+  font-size: 0.7rem;
   font-weight: 700;
   font-family: var(--font-heading);
   letter-spacing: -0.03em;
+}
+
+.greeting-text {
+  font-size: 0.7rem;
 }
 
 .nav-links {

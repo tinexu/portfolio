@@ -405,7 +405,7 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                Hi, I’m <span className="svg-gradient-text animated-gradient">Christine Xu</span>
+               <span className="greeting-text">Hi, I'm</span> <span className="svg-gradient-text animated-gradient">Christine Xu</span>
               </motion.h1>
 
               <motion.div
