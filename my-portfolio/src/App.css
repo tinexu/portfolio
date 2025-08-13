@@ -187,21 +187,27 @@ body {
 }
 
 /* Gradient Text */
-.gradient-text {
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
-  background-size: 200% auto;
+.gradient-text{
+  background: linear-gradient(90deg,var(--primary-color),var(--secondary-color),var(--accent-color));
+  background-size: 200% 100%;
+  background-position-x: 0%;
+  background-position-y: 0%;   /* lock Y */
+  background-repeat: no-repeat;
+
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  display: inline-block; 
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 3s ease infinite;
+
+  display: inline-block;
+  will-change: background-position-x; /* hint for FF */
+  animation: gradientX 3s ease infinite;
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes gradientX {
+  0%   { background-position-x: 0%; }
+  50%  { background-position-x: 100%; }
+  100% { background-position-x: 0%; }
 }
 
 /* Header/Hero Section */
