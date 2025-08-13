@@ -172,6 +172,20 @@ function App() {
 
   const experiences = [
     {
+      title: 'App Development Engineer',
+      company: 'SwiprAI',
+      period: 'August 2025 – Present',
+      location: 'New York, NY',
+      bullets: [
+        'Built core features in Flutter for an AI-driven fintech app that simulates professional-grade portfolios tailored to risk and goals',
+        'Designed a swipe-based card interface to browse, compare backtests, and follow strategies, improving selection completion',
+        'Delivered explainable recommendations with risk/return, fees, drawdown, and plain-language rationales',
+        'Automated portfolio upkeep with drift detection, threshold rebalancing, and alerts; used Firebase for auth and real-time sync'
+      ],
+      tech: ['ML for Finance', 'Firebase', 'Flutter', 'UX for Mobile'],
+    },
+
+    {
       title: 'Software Engineering & App Intern',
       company: 'CuesHub',
       period: 'July 2025 – Present',
