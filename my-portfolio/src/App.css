@@ -188,24 +188,25 @@ body {
 
 /* Gradient Text */
 /* Default for Chrome/Safari/Edge */
-.gradient-text {
-  --grad: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
-  background: var(--grad);
-  background-size: 200% 100%;
-  background-position: 0 0;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  display: inline-block;
-  animation: gradientX 3s ease infinite;
+.gradient-text{
+ --grad: linear-gradient(90deg,var(--primary-color),var(--secondary-color),var(--accent-color));
+ 
+ /* Add fallback color first */
+ color: var(--primary-color);
+ 
+ background: var(--grad);
+ background-size: 200% 100%;
+ background-position: 0 0;
+ -webkit-background-clip: text;
+ -moz-background-clip: text; /* Add Firefox prefix */
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color: transparent; /* Add Firefox prefix */
+ color: transparent;
+ display: inline-block;
+ animation: gradientX 3s ease infinite;
 }
-
-@keyframes gradientX {
-  to {
-    background-position: 200% 0;
-  }
-}
+@keyframes gradientX { to { background-position: 200% 0; } }
 
 /* Header/Hero Section */
 .header {
