@@ -190,25 +190,21 @@ body {
 .svg-gradient-text {
     font-size: 4rem;
     font-weight: bold;
-    
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='200%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%233b82f6'/%3E%3Cstop offset='50%25' style='stop-color:%23a855f7'/%3E%3Cstop offset='100%25' style='stop-color:%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3C/svg%3E");
-    
+    background: linear-gradient(45deg, #3b82f6, #a855f7, #ec4899, #3b82f6);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     color: transparent;
-    
-    background-size: 200% 100%;
-    animation: gradientX 3s ease infinite;
-    
+    background-size: 400% 400%;
+    animation: gradientX 8s ease infinite;
     transform: translateZ(0);
 }
 
 @keyframes gradientX {
-    to { background-position: 200% 0; }
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
 /* Header/Hero Section */
