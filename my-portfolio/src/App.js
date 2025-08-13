@@ -367,7 +367,7 @@ function App() {
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.05 }}
           >
-            <span className="svg-gradient-text">Portfolio</span>
+            <span className="svg-gradient-text">def christine():</span>
           </motion.div>
           <div className="nav-links">
             {['Home', 'About', 'Experience', 'Projects', 'Contact'].map((sec, i) => (

@@ -188,7 +188,7 @@ body {
 
 /* Gradient Text */
 .svg-gradient-text {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     background: linear-gradient(45deg, #3b82f6, #a855f7, #ec4899, #3b82f6);
     -webkit-background-clip: text;
