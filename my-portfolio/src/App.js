@@ -367,7 +367,7 @@ function App() {
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.05 }}
           >
-            <span className="gradient-text">Portfolio</span>
+            <span className="svg-gradient-text">Portfolio</span>
           </motion.div>
           <div className="nav-links">
             {['Home', 'About', 'Experience', 'Projects', 'Contact'].map((sec, i) => (
@@ -405,7 +405,7 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                Hi, I’m <span className="gradient-text animated-gradient">Christine Xu</span>
+                Hi, I’m <span className="svg-gradient-text animated-gradient">Christine Xu</span>
               </motion.h1>
 
               <motion.div
@@ -465,7 +465,7 @@ function App() {
             transition={{ duration: 0.5 }}
             className="section-title"
           >
-            <span className="gradient-text">About Me</span>
+            <span className="svg-gradient-text">About Me</span>
           </motion.h2>
 
           <div className="about-content">
@@ -590,7 +590,7 @@ function App() {
             transition={{ duration: 0.5 }}
             className="section-title"
           >
-            <span className="gradient-text">Featured Projects</span>
+            <span className="svg-gradient-text">Featured Projects</span>
           </motion.h2>
 
           <div className="projects-grid">
@@ -678,7 +678,7 @@ function App() {
             transition={{ duration: 0.5 }}
             className="section-title"
           >
-            <span className="gradient-text">Get In Touch</span>
+            <span className="svg-gradient-text">Get In Touch</span>
           </motion.h2>
 
           <div className="contact-content">
