@@ -172,9 +172,22 @@ function App() {
 
   const experiences = [
     {
-      title: 'App Development Engineer',
+      title: 'AI Consulting Intern',
+      company: 'Clearset.ai',
+      period: 'September 2025 – Present',
+      location: 'Tampa, FL',
+      bullets: [
+        'Translated open-ended client business problems into clear AI workflows, metrics, and success criteria',
+        'Built and deployed ML models and ETL pipelines in Python, integrating with existing client systems',
+        'Developed KPI dashboards to monitor model performance, data quality, and business impact',
+        'Collaborated with cross-functional teams to refine solutions and ensure ethical, maintainable deployments'
+      ],
+      tech: ['Python', 'Machine Learning Model Development & Evaluation', 'Data Pipelines & ETL', 'SQL & Analytics Reporting'],
+    },
+    {
+      title: 'Software Engineering Intern',
       company: 'SwiprAI',
-      period: 'August 2025 – Present',
+      period: 'August 2025 – October 2025',
       location: 'New York, NY',
       bullets: [
         'Built core features in Flutter for an AI-driven fintech app that simulates professional-grade portfolios tailored to risk and goals',
@@ -188,7 +201,7 @@ function App() {
     {
       title: 'Software Engineering & App Intern',
       company: 'CuesHub',
-      period: 'July 2025 – Present',
+      period: 'July 2025 – August 2025',
       location: 'Memphis, TN',
       bullets: [
         'Designed a modular Flutter app with dynamic calendar integration and local-first storage for real-time health tracking',
@@ -199,22 +212,9 @@ function App() {
       tech: ['Flutter', 'On-device Machine Learning', 'Time Series Analysis', 'Behavioral Modeling'],
     },
     {
-      title: 'App Development Intern & Lead',
-      company: 'Oracode',
-      period: 'July 2025 – Present',
-      location: 'Remote',
-      bullets: [
-        'Led Flutter dev for an offline-first educational app with full routing, state, and theming',
-        'Built game and sandbox modes using custom Blockly-based simulation logic',
-        'Developed on-device NLP for multilingual interactions and AI feedback',
-        'Designed real-time features with local storage to support interactive learning'
-      ],
-      tech: ['Flutter', 'Blockly/Visual Programming', 'On-device NLP', 'State Management'],
-    },
-    {
       title: 'STEM Tutor',
       company: 'Amergis',
-      period: 'August 2025 – Present',
+      period: 'September 2025 – Present',
       location: 'Remote',
       bullets: [
         'Tutored high school students in math and science through the Paper platform, focusing on analytical reasoning and problem-solving strategies',
@@ -226,7 +226,7 @@ function App() {
     },
     {
       title: 'Marketing and Membership Coordinator',
-      company: 'Fitness Project',
+      company: 'Fitness Project/Planet Fitness',
       period: 'May 2025 – August 2025',
       location: 'The Woodlands, TX',
       bullets: [
@@ -241,6 +241,14 @@ function App() {
   ];
 
   const projects = [
+    {
+      title: "Cloud-Native Federated Learning with Differential Privacy",
+      description: "Production-ready distributed ML system implementing FedAvg algorithm with differential privacy for privacy-preserving model training. Achieved 82.2% accuracy across non-IID data distributions using AWS Lambda for serverless compute, S3 for model versioning, and secure aggregation via secret sharing. Features MLOps pipeline with canary deployments, real-time monitoring dashboard, and privacy budget tracking.",
+      tech: ["PyTorch", "AWS Lambda", "Docker", "Terraform", "Differential Privacy", "S3", "Flask API", "Secure Aggregation", "React & Chart.js"],
+      image: "/flp.png",
+      demo: "#",
+      github: "https://github.com/tinexu/federated-platform"
+    },
     {
       title: "Fluffi",
       description: "An AI assistant that simulates memory decay using behavioral embeddings and on-device NLP to proactively resurface relevant past experiences.",
@@ -757,7 +765,7 @@ function App() {
         <div className="container">
           <p>© 2025 Christine Xu</p>
           <div className="footer-links">
-            <a href="/Christine_Xu_Resume_AppleAI.pdf" target="_blank" rel="noopener noreferrer" aria-label="Featured">
+            <a href="/Christine_Xu_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Featured">
               <i className="fas fa-star"></i>
             </a>
             <a href="https://github.com/tinexu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
